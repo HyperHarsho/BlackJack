@@ -346,15 +346,16 @@ public class App {
                     System.out.println("Do you want to HIT or STAND?");
                     c = in.next();
                     c = c.toLowerCase();
+                    natural = true;
                     switch (c) {
                         case "hit":
                             playerHand.add(deck.poll());
-                            natural = true;
                             count();
                             print();
                             break;
                         case "stand":
                             System.out.println("You stand");
+                            count();
                             print();
                             break;
                         default:
